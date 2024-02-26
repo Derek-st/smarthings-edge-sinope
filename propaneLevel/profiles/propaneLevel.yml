@@ -1,0 +1,84 @@
+name: tankLevel
+components:
+- id: main
+  capabilities:
+  - id: "digitclever52707.propaneLevel"
+    version: 1
+  - id: "temperatureMeasurement"
+    version: 1
+  - id: "battery"
+    version: 1
+  - id: "refresh"
+    version: 1
+  - id: "vehicleFuelLevel"
+    version: 1
+  categories:
+  - name: GasMeter
+preferences:
+  - title: "Gauge Type"
+    name: gaugeType
+    description: "GaugeType"
+    required: true
+    preferenceType: enumeration
+    definition:
+      options:
+        "90" : "R3D 5-90"
+        "80" : "R3D 10-80"
+      default: "80"
+  - title: "Tank Size"
+    name: tankSize
+    description : "Tank Size (GAL)"
+    preferenceType: integer
+    definition:
+      minimum: 0
+      maximum: 1000
+      default: 440
+  - title: "Webhook IP"
+    name: webhookip
+    description : "IP Address of webhook on local net"
+    preferenceType: string
+    definition:
+      stringType: "text"
+      default: "192.168.34.1"
+  - title: "Low Fuel %"
+    name: lowpct
+    description : "2 point fuel calibration"
+    preferenceType: integer
+    definition:
+      minimum: 0
+      maximum: 100
+      default: 20
+  - title: "Low Fuel Angle"
+    name: lowdeg
+    description : "2 point fuel calibration"
+    preferenceType: integer
+    definition:
+      minimum: 0
+      maximum: 360
+      default: 182
+  - title: "High Fuel %"
+    description : "2 point fuel calibration"
+    name: highpct
+    preferenceType: integer
+    definition:
+      minimum: 0
+      maximum: 100
+      default: 70
+  - title: "High Fuel angle"
+    name: highdeg
+    description : "2 point fuel calibration"
+    preferenceType: integer
+    definition:
+      minimum: 0
+      maximum: 360
+      default: 340
+  - title: "Temperature Max Int"
+    name: tempMaxInterval
+    description: "Max interval between temperature updates"
+    preferenceType: integer
+    definition:
+      default: 1800
+      minimum: 60
+      maximum: 65535
+
+

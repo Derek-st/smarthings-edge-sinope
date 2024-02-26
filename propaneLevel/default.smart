@@ -1,0 +1,11 @@
+{
+    "name": "default",
+    "active": "true",
+    "token": "09c2166b-683e-4b58-9b4b-b6e3ab40d9fd",
+    "apiUrl": "",
+    "data": {
+        "defaultChannel": "f93133a7-512c-4e11-81d9-959bbac129f8",
+        "defaultHub": "66b7d10f-f57c-4ff5-9741-58140b7736a2",
+        "token": "09c2166b-683e-4b58-9b4b-b6e3ab40d9fd"
+    }
+}

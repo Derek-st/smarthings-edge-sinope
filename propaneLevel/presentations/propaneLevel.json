@@ -1,0 +1,65 @@
+{"id" : "digitclever52707.propaneLevel",
+    "version" : 1,
+
+    "dashboard": {
+        "states": [
+            {
+                "label": "{{propaneLevel.value}} {{propaneLevel.unit}}",
+                "alternatives": [
+                    {
+                        "key": "%",
+                        "value": "%",
+                        "type": "active"
+                    },
+                    {
+                        "key": "Gal",
+                        "value": "Gal",
+                        "type": "active"
+                    },
+                    {
+                        "key": "l",
+                        "value": "l",
+                        "type": "active"
+                    }
+                ]
+            }
+        ],
+        "actions": []
+    },
+    "detailView": [ 
+         {
+            "label": "Propane Raw Angle",
+            "displayType": "state",
+            "state": { "label":"{{propaneAngle.value}}" }
+        },
+	 {
+            "label": "Propane Vol @ 15C",
+            "displayType": "state",
+            "state": { "label":"{{propaneVolume.value}}" }
+        }
+
+      
+        
+
+
+    ],
+    "automation": {
+        "conditions": [
+            {
+                "label": "{{i18n.label}}",
+                "displayType": "numberField",
+                "numberField": {
+                    "value": "propaneLevel.value",
+                    "valueType": "number",
+                    "unit": "propaneLevel.unit",
+                    "range": [
+                        0,
+                        100
+                    ]
+                }
+            }
+        ],
+        "actions": []
+    }
+}
+

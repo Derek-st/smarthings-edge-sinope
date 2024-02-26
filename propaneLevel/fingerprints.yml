@@ -1,0 +1,6 @@
+zigbeeManufacturer:
+  - id: "digitclever52707.propaneLevel"
+    deviceLabel: Sinope Tank Level 
+    manufacturer: Sinope Technologies
+    model: LM4110-ZB
+    deviceProfileName: tankLevel

@@ -1,0 +1,127 @@
+{   "id" : "digitclever52707.propaneLevel",
+    "status": "proposed",
+    "name": "propaneLevel",
+    "ephemeral": false,
+    "attributes": {
+        "propaneLevel": {
+            "schema": {
+                "title": "Propane Level",
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 100
+                    },
+                    "unit": {
+                        "type": "string",
+                        "enum": [
+                            "%"
+                        ],
+                        "default": "%"
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "value"
+                ]
+            },
+            "enumCommands": []
+        },
+	"propaneAngle": {
+            "schema": {
+                "title": "Propane Gauge Angle",
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 360
+                    }
+                    
+                },
+                "additionalProperties": false,
+                "required": [
+                    "value"
+                ]
+            },
+            "enumCommands": []
+        },
+	"propaneVolume": {
+            "schema": {
+                "title": "Propane Volume at 15C",
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "type": "number"
+                    }
+
+                },
+                "additionalProperties": false,
+                "required": [
+                    "value"
+                ]
+            },
+            "enumCommands": []
+        },
+
+       "propaneLastread": {
+            "schema": {
+                "title": "LastReading",
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "type": "number"
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "value"
+                ]
+            },
+            "enumCommands": []
+        },
+	"propaneRate": {
+            "schema": {
+                "title": "Propane Rate",
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "type": "number" } ,
+		    "unit" : {
+                        "type": "string",
+                        "enum": [
+                            "l/h" , "gal/h"
+                        ],
+                        "default": "gal/h"
+
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "value"
+                ]
+            },
+            "enumCommands": []
+         },
+        "propaneFillDate": {
+            "schema": {
+                "title": "Propane Last Fill Date",
+                "type": "object",
+                "properties": {
+                    "value": {
+			    "type":"string"
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "value"
+                ]
+            },
+            "enumCommands": []
+         }
+
+
+    },
+    "commands": {}
+}

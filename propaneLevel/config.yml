@@ -1,0 +1,8 @@
+name: 'propaneLevel'
+packageKey: 'sinopetank'
+description: 'Sinope Tank level monito'
+vendorSupportInformation: 'Developer: </a>'
+permissions:
+  discovery: {}
+  zigbee: {} 
+  lan: {}
